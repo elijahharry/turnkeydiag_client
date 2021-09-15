@@ -16,7 +16,7 @@ const Panels = () => {
         content={{
           id: "panels-page",
           overline: "Wide Variety of Tests & Panels",
-          title: "Wide variety of <span>tests & panels</span>",
+          title: "Wide Variety of <span>Tests & Panels</span>",
         }}
         background={{
           vid: {

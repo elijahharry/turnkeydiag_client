@@ -14,7 +14,7 @@ export default function About() {
           id: "about",
           overline: "Who we are / about us",
           title:
-            "Nationwide Partnerships All Through One Trusted Source to Benefit You</span>",
+            "Nationwide Partnerships All Through <span>One Trusted Source</span> to Benefit You",
         }}
         background={{
           vid: {

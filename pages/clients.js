@@ -17,7 +17,7 @@ const ClientsPage = () => {
           content={{
             id: "clients",
             overline: "Trusted across the country",
-            title: "Learn about our <span>clients</span>",
+            title: "Learn About Our <span>Clients</span>",
             desc: "Our innovative approach bridges the gap between labs, patients and physicians.",
           }}
           background={{

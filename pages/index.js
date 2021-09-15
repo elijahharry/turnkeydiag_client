@@ -17,7 +17,7 @@ export default function Index() {
           id: "homepage",
           overline: "All Diagnostic Needs Through One Trusted Source",
           title:
-            "Providing a <span>turnkey solution</span> for diagnostic services",
+            "Providing a <span>Turnkey Solution</span> for Diagnostic Services",
           desc: "Our innovative approach bridges the gap between labs, patients and physicians.",
         }}
         background={{
