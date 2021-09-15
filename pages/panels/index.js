@@ -1,0 +1,36 @@
+import { useState, useEffect } from "react";
+
+import MainWrap from "@components/MainWrap/MainWrap";
+import Hero from "@components/Hero/Hero";
+import panels from "@constants/panels";
+import PanelsList from "@components/PanelsList/PanelsList";
+
+import useInterval from "react-useinterval";
+
+const Panels = () => {
+  const [highlight, setHighlight] = useState(0);
+
+  return (
+    <MainWrap>
+      <Hero
+        content={{
+          id: "panels-page",
+          overline: "Wide Variety of Tests & Panels",
+          title: "Wide variety of <span>tests & panels</span>",
+        }}
+        background={{
+          vid: {
+            src: "panels.mp4",
+            blur: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gIoSUNDX1BST0ZJTEUAAQEAAAIYAAAAAAIQAABtbnRyUkdCIFhZWiAAAAAAAAAAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAAHRyWFlaAAABZAAAABRnWFlaAAABeAAAABRiWFlaAAABjAAAABRyVFJDAAABoAAAAChnVFJDAAABoAAAAChiVFJDAAABoAAAACh3dHB0AAAByAAAABRjcHJ0AAAB3AAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAFgAAAAcAHMAUgBHAEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFhZWiAAAAAAAABvogAAOPUAAAOQWFlaIAAAAAAAAGKZAAC3hQAAGNpYWVogAAAAAAAAJKAAAA+EAAC2z3BhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABYWVogAAAAAAAA9tYAAQAAAADTLW1sdWMAAAAAAAAAAQAAAAxlblVTAAAAIAAAABwARwBvAG8AZwBsAGUAIABJAG4AYwAuACAAMgAwADEANv/bAEMAAwICAgICAwICAgMDAwMEBgQEBAQECAYGBQYJCAoKCQgJCQoMDwwKCw4LCQkNEQ0ODxAQERAKDBITEhATDxAQEP/bAEMBAwMDBAMECAQECBALCQsQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEP/AABEIAAgADgMBIgACEQEDEQH/xAAWAAEBAQAAAAAAAAAAAAAAAAAAAwX/xAAhEAABAgYCAwAAAAAAAAAAAAABAgMABAUGETEHEiFRUv/EABUBAQEAAAAAAAAAAAAAAAAAAAUG/8QAHREAAQQCAwAAAAAAAAAAAAAAAQACAwQRITFRsf/aAAwDAQACEQMRAD8A05Ky7CcpDSpS46dLF9nunDK0rbBBwAe2iDs/OhmKs8d2q1Nuqqk/Rqo+AGmlTSXcobT6KlHZIJxvxmEIvHVoo35A4QxtSFmz16F//9k=",
+            fit: "center",
+          },
+        }}
+        button1={{ link: "/about#collectors", text: "Benefits" }}
+        button2={{ link: "/contact", text: "Contact us" }}
+      />
+      <PanelsList />
+    </MainWrap>
+  );
+};
+
+export default Panels;
