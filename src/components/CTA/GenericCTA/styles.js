@@ -11,12 +11,13 @@ export default makeStyles((theme) => ({
     height: 150,
     display: "flex",
     justifyContent: "space-between",
-    alignItems: "center",
+    alignItems: "stretch",
     overflow: "hidden",
     boxShadow: theme.shadows[4],
     borderBottom: `5px solid ${theme.palette.secondary.main}`,
     [theme.breakpoints.down("sm")]: {
       marginTop: 0,
+      height: "auto",
     },
   },
   title: {
@@ -40,6 +41,8 @@ export default makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       paddingLeft: theme.spacing(2),
       paddingRight: theme.spacing(4),
+      paddingTop: theme.spacing(2),
+      paddingBottom: theme.spacing(2),
       justifyContent: "flex-start",
     },
   },
@@ -144,7 +147,6 @@ export default makeStyles((theme) => ({
   cta_media: {
     position: "relative",
     flexBasis: "30%",
-    height: "100%",
     overflow: "hidden",
     borderTopRightRadius: 5,
     zIndex: 0,
