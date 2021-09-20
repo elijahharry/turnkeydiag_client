@@ -8,7 +8,7 @@ import useStyles from "./styles";
 
 const BackgroundVid = ({ vid }) => {
   const classes = useStyles();
-  const [loaded, setLoaded] = useState(false);
+  const [loaded, setLoaded] = useState(true);
 
   return (
     <div className={classes.video} key={`${vid.src}-hero`}>
