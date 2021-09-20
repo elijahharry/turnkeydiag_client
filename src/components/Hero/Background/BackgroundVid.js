@@ -12,19 +12,45 @@ const BackgroundVid = ({ vid }) => {
 
   return (
     <div className={classes.video} key={`${vid.src}-hero`}>
-      <ReactPlayer
-        url={`${process.env.VIDEOS}${vid.src}`}
-        playsinline={true}
-        playing={true}
-        loop={true}
-        muted={true}
-        width="100%"
-        height="100%"
-        onReady={() => setLoaded(true)}
+      {/* <div
+        className={classes.vid_holder}
+        dangerouslySetInnerHTML={{
+          __html: `<video src="${process.env.VIDEOS + vid.src}" className="${
+            vid?.fit === "right" ? classes.fit_right : classes.fit_center
+          }" preload="auto" autoplay loop muted playsinline webkit-playsinline x5-playsinline onplay="${function test() {
+            setLoaded(true);
+          }}" style="width: 100%; height: 100%;"></video>`,
+        }}
+      ></div> */}
+      <video
+        src={`${process.env.VIDEOS + vid.src}`}
         className={`${
           vid?.fit === "right" ? classes.fit_right : classes.fit_center
         }`}
-      />
+        preload="auto"
+        autoPlay
+        loop
+        muted
+        playsInline
+        onPlay={() => {
+          setLoaded(true);
+        }}
+        style={{ width: "100%", height: "100%" }}
+      ></video>
+      {/* <ReactPlayer
+        url={`${process.env.VIDEOS}${vid.src}`}
+        playsinline
+        volume={null}
+        playing
+        loop
+        width="100%"
+        height="100%"
+        onReady={() => setLoaded(true)}
+        config={{ file: { forceVideo: true } }}
+        className={`${
+          vid?.fit === "right" ? classes.fit_right : classes.fit_center
+        }`}
+      /> */}
       <div
         className={`${classes.overlay} ${
           loaded ? classes.overlay_unblur : classes.overlay_blur

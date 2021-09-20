@@ -40,6 +40,10 @@ export default makeStyles((theme) => ({
     zIndex: 0,
     transition: "filter 800ms",
   },
+  vid_holder: {
+    width: "100%",
+    height: "100%",
+  },
   hide: {
     opacity: 0,
     transform: "scale(1.25)",

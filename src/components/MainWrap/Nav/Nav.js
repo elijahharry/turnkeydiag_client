@@ -161,7 +161,7 @@ const Nav = () => {
                 <MobileMenu />
               )}
             </div>
-            {!screen.sm && (
+            {screen.width >= 960 && (
               <PanelsMenu
                 onHover={handleMenuHover}
                 onLeave={handleMenuLeave}
