@@ -6,6 +6,10 @@ export default makeStyles((theme) => ({
     position: "relative",
     minHeight: 750,
     overflow: "hidden",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
     [theme.breakpoints.down("xs")]: {
       height: "auto !important",
     },

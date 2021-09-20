@@ -8,36 +8,13 @@ import useStyles from "./styles";
 
 const BackgroundVid = ({ vid }) => {
   const classes = useStyles();
-  const [loaded, setLoaded] = useState(true);
+  const [loaded, setLoaded] = useState(false);
 
   return (
     <div className={classes.video} key={`${vid.src}-hero`}>
-      {/* <div
-        className={classes.vid_holder}
-        dangerouslySetInnerHTML={{
-          __html: `<video src="${process.env.VIDEOS + vid.src}" className="${
-            vid?.fit === "right" ? classes.fit_right : classes.fit_center
-          }" preload="auto" autoplay loop muted playsinline webkit-playsinline x5-playsinline onplay="${function test() {
-            setLoaded(true);
-          }}" style="width: 100%; height: 100%;"></video>`,
-        }}
-      ></div> */}
-      <video
-        src={`${process.env.VIDEOS + vid.src}`}
-        className={`${
-          vid?.fit === "right" ? classes.fit_right : classes.fit_center
-        }`}
-        preload="auto"
-        autoPlay
-        loop
+      <ReactPlayer
+        volume={0}
         muted
-        playsInline
-        onPlay={() => {
-          setLoaded(true);
-        }}
-        style={{ width: "100%", height: "100%" }}
-      ></video>
-      {/* <ReactPlayer
         url={`${process.env.VIDEOS}${vid.src}`}
         playsinline
         volume={null}
@@ -50,7 +27,7 @@ const BackgroundVid = ({ vid }) => {
         className={`${
           vid?.fit === "right" ? classes.fit_right : classes.fit_center
         }`}
-      /> */}
+      />
       <div
         className={`${classes.overlay} ${
           loaded ? classes.overlay_unblur : classes.overlay_blur
