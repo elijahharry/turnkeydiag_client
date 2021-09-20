@@ -46,7 +46,6 @@ export const cancer = {
       },
       cta: { text: "Identify early & save lives" },
       flipped: true,
-      backdrop: { backdrop: "secondary", opacity: 0.05 },
     },
     {
       type: "TextImg",
@@ -75,6 +74,7 @@ export const cancer = {
         type: "transparent",
       },
       cta: { text: "My patients would benefit from testing" },
+      backdrop: { backdrop: "grey", opacity: 0.04 },
     },
     {
       type: "TextImg",

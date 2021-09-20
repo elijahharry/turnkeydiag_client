@@ -22,6 +22,7 @@ const TextImg = ({
   img,
   flipped,
   border,
+  section_border,
   padding,
   ul_flex,
   ul_height,
@@ -98,7 +99,12 @@ const TextImg = ({
   }, [imgLoaded]);
 
   return (
-    <section id={id} className={classes.section}>
+    <section
+      id={id}
+      className={`${classes.section}${
+        section_border ? ` ${classes.section_border}` : ""
+      }`}
+    >
       <Container maxWidth="lg" className={classes.container}>
         <Grid
           container

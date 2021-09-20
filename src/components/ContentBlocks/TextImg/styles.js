@@ -126,8 +126,8 @@ export default makeStyles((theme) => ({
     justifyContent: "center",
     height: "100%",
     alignItems: "flex-start",
-    paddingBottom: theme.spacing(4),
-    paddingTop: theme.spacing(4),
+    paddingBottom: theme.spacing(8),
+    paddingTop: theme.spacing(8),
     position: "relative",
     zIndex: 2,
     [theme.breakpoints.down("sm")]: {
@@ -380,5 +380,9 @@ export default makeStyles((theme) => ({
   img_show: {
     transform: "translateY(0)",
     opacity: 1,
+  },
+  section_border: {
+    borderTop: `1px solid #f4f4f4`,
+    borderBottom: `1px solid #f4f4f4`,
   },
 }));

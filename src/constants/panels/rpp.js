@@ -70,6 +70,7 @@ export const influenza = {
       color: "primary",
       img: { src: "flu-virus.png", type: "transparent" },
       cta: { text: "Embrace the benefits" },
+      backdrop: { backdrop: "grey", opacity: 0.04 },
     },
   ],
 };

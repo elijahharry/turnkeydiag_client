@@ -57,6 +57,7 @@ const Panel = ({ panel }) => {
               border={component?.border}
               img={component?.img}
               ul_flex={component?.ul_flex}
+              section_border={component?.section_border}
               ul_height={component?.ul_height}
             />
           );

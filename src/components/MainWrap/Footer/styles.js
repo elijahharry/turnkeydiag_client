@@ -131,7 +131,7 @@ export default makeStyles((theme) => ({
     },
   },
   logo: {
-    height: 80,
+    height: 60,
     [theme.breakpoints.down("xs")]: {
       height: "auto",
       width: "70%",
@@ -153,7 +153,7 @@ export default makeStyles((theme) => ({
     display: "flex",
     justifyContent: "flex-start",
     alignItems: "center",
-    height: 126,
+    height: 100,
   },
   top_text: {
     paddingTop: theme.spacing(2),

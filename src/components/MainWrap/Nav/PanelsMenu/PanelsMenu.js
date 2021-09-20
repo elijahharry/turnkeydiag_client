@@ -55,7 +55,7 @@ const PanelsMenu = ({ onHover, onLeave, hover, handleClick }) => {
             {panels.map((panel) => (
               <Link href={`/panels/${panel.slug}`}>
                 <a>
-                  <Typography variant="body1" className={classes.link}>
+                  <Typography variant="body2" className={classes.link}>
                     <div className={classes.avatar}>
                       <Image
                         src={`/img/panels/vid-previews/${panel.vid.preview}`}

@@ -109,7 +109,7 @@ export default makeStyles((theme) => ({
     maxWidth: "80%",
     padding: theme.spacing(2),
     borderRadius: 20,
-    backgroundColor: "#fff",
+    // backgroundColor: "#fff",
     [theme.breakpoints.down("sm")]: {
       maxWidth: "90%",
     },
@@ -129,13 +129,16 @@ export default makeStyles((theme) => ({
     margin: `${theme.spacing(0.5)}px 0`,
   },
   border_secondary_light: {
-    borderBottom: `3px solid ${theme.palette.secondary.light}`,
+    borderBottom: `5px solid ${theme.palette.secondary.light}`,
+    paddingBottom: 0,
   },
   border_secondary: {
-    borderBottom: `3px solid ${theme.palette.secondary.main}`,
+    borderBottom: `5px solid ${theme.palette.secondary.main}`,
+    paddingBottom: 0,
   },
   border_primary: {
-    borderBottom: `3px solid ${theme.palette.primary.main}`,
+    borderBottom: `5px solid ${theme.palette.primary.main}`,
+    paddingBottom: 0,
   },
   icon_fill: {
     width: "1.2rem",
@@ -143,5 +146,29 @@ export default makeStyles((theme) => ({
     borderRadius: "50%",
     position: "absolute",
     left: 18,
+  },
+  tabs: {
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    alignItems: "flex-start",
+    filter: "drop-shadow(0 3px 2px #00000033)",
+    margin: `${theme.spacing(2)}px 0`,
+  },
+  tab: {
+    padding: theme.spacing(3),
+    height: 70,
+    backgroundColor: "#fff",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    borderRadius: 0,
+    cursor: "pointer",
+  },
+  tab_unselected: {
+    borderBottom: `5px solid #ededed`,
+  },
+  tab_selected: {
+    fontWeight: 500,
   },
 }));

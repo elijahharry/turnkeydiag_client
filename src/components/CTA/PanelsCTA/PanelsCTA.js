@@ -34,20 +34,6 @@ const PanelsCTA = ({ color, backdrop }) => {
   const [selected, setSelected] = useState(panels[0].slug);
   const [vid, setVid] = useState(panels[0].vid);
   const [loaded, setLoaded] = useState(false);
-  const [shuffled, setShuffled] = useState(null);
-
-  useEffect(() => {
-    const allPanels = [...panels];
-    const shuffledPanels = shuffle(allPanels);
-    setShuffled(shuffledPanels);
-  }, []);
-
-  useEffect(() => {
-    if (Array.isArray(shuffled)) {
-      setSelected(shuffled[1].slug);
-      setVid(shuffled[1].vid);
-    }
-  }, [shuffled]);
 
   const handleChange = (e) => {
     setSelected(e.target.value);
@@ -168,20 +154,6 @@ const PanelsCTA = ({ color, backdrop }) => {
       />
     </section>
   );
-};
-
-const shuffle = (array) => {
-  let currentIndex = array.length;
-  let randomIndex;
-  while (currentIndex != 0) {
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex--;
-    [array[currentIndex], array[randomIndex]] = [
-      array[randomIndex],
-      array[currentIndex],
-    ];
-  }
-  return array;
 };
 
 export default PanelsCTA;

@@ -75,7 +75,7 @@ export const uti = {
       },
       cta: { text: "My patients need UTI testing" },
       flipped: true,
-      backdrop: { backdrop: "secondary_light", opacity: 0.05 },
+      backdrop: { backdrop: "grey", opacity: 0.04 },
     },
     {
       type: "TextImg",

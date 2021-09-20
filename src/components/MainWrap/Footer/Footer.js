@@ -50,9 +50,9 @@ const Footer = () => {
           align="left"
           className={classes.contact_text}
         >
-          9615 Jessica Ct
+          200 S Virgina St, 8th Floor
           <br />
-          Reno, NV 89521
+          Reno, NV 89501
         </Typography>
       </div>
     </div>,
@@ -70,9 +70,9 @@ const Footer = () => {
               variant="body2"
               align={screen.width >= 600 ? "left" : "center"}
             >
-              Turnkey Diagnostics is a laboratory testing marketplace solution
-              for Consumers and Businesses. Our innovative approach bridges the
-              gap between labs, patients and physicians
+              Turnkey Diagnostics is a laboratory testing marketplace for
+              consumers and businesses. Our innovative approach bridges the gap
+              between labs, patients and physicians
             </Typography>
             {screen.width >= 600 && contact}
           </div>

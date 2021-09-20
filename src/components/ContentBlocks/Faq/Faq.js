@@ -35,13 +35,13 @@ const Faq = ({ img, title, overline, desc, questions, backdrop, color }) => {
     case "secondary_light":
       backdropClass = backdrops.secondary_light;
       colorClass = classes.secondary_light;
-      borderClass = classes.border_secondary_light;
+      borderClass = classes.border_secondary;
       fillClass = backdrops.secondary;
       break;
     case "secondary":
       backdropClass = backdrops.secondary;
       colorClass = classes.secondary;
-      borderClass = classes.border_secondary;
+      borderClass = classes.border_secondary_light;
       fillClass = backdrops.secondary_light;
       break;
     case "primary":
@@ -80,38 +80,46 @@ const Faq = ({ img, title, overline, desc, questions, backdrop, color }) => {
         {/* <Typography align="center" variant="body2">
           {desc ? desc : "Click each question to learn more."}
         </Typography> */}
-        <div className={classes.chips}>
+        <div className={classes.tabs}>
           {questions.map((q, i) => (
             <div
               className={`
-                  ${classes.chip} ${backdropClass} ${
-                selected === i && classes.chip_selected
+                  ${classes.tab} ${
+                selected === i ? borderClass : classes.tab_unselected
               }
                 `}
               key={Math.random() + i}
               onClick={() => setSelected(i)}
-              onMouseEnter={() => setSelected(i)}
             >
-              <Typography variant="body2" align="left" className="text-flex">
-                {selected === i ? <HelpIcon /> : <HelpOutlineIcon />} {q.q}
-                <div className={`${classes.icon_fill} ${fillClass}`} />
+              <Typography
+                variant="body1"
+                align="left"
+                className={
+                  "text-flex" +
+                  (selected === i
+                    ? ` ${colorClass} ${classes.tab_selected}`
+                    : "")
+                }
+              >
+                {selected === i && <HelpIcon />}
+                {q.q}
               </Typography>
             </div>
           ))}
         </div>
         <motion.div
           key={`selected-${selected}`}
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          exit={{ scale: 0 }}
-          className={`${classes.selected_content} ${borderClass}`}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className={`${classes.selected_content}`}
         >
-          <Typography
+          {/* <Typography
             variant="h5"
             className={"text-flex " + classes.selected_q}
           >
             <InfoIcon className={colorClass} /> {selectedContent.q}
-          </Typography>
+          </Typography> */}
           {selectedContent.a.map((p, i) => (
             <Typography
               key={`selected-p-${i}`}

@@ -67,7 +67,8 @@ const Nav = () => {
                   <EmailIcon /> info@turnkeytests.com
                 </Typography>
                 <Typography variant="body2" className={classes.contact_item}>
-                  <RoomIcon /> {!screen.sm && "9615 Jessica Ct, "}Reno NV 89521
+                  <RoomIcon /> {!screen.sm && "200 S Virgina St 8th Floor, "}
+                  Reno, NV 89501
                 </Typography>
                 {!screen.md && (
                   <Typography variant="body2" className={classes.contact_item}>

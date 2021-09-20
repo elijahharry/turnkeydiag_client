@@ -58,6 +58,7 @@ export const toxicology = {
       },
       flipped: true,
       cta: { text: "Improve your clinical testing" },
+      backdrop: { backdrop: "grey", opacity: 0.04 },
     },
     {
       type: "TextImg",
@@ -92,7 +93,7 @@ export const toxicology = {
       },
       cta: { text: "Achieve 100% certainty" },
       flipped: true,
-      backdrop: { backdrop: "secondary_light", opacity: 0.03 },
+      backdrop: { backdrop: "grey", opacity: 0.04 },
     },
     {
       type: "Checklist",

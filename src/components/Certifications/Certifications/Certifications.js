@@ -12,7 +12,7 @@ const Certifications = ({ backdrop }) => {
 
   return (
     <section id="panels-select" className={classes.section}>
-      <Container maxWidth="lg" style={{ padding: 0 }}>
+      <Container maxWidth="lg" className={classes.container}>
         <div className={classes.badges}>
           {badges.map((badge) => (
             <div className={classes.badge}>
@@ -26,7 +26,11 @@ const Certifications = ({ backdrop }) => {
             </div>
           ))}
         </div>
+        <Typography variant="overline" align="center">
+          Our partner's certifications
+        </Typography>
       </Container>
+
       <div
         className={`${classes.background} ${classes.background_overlay} ${
           backdrop?.backdrop && backdrops[backdrop.backdrop]

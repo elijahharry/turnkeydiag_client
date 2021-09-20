@@ -4,7 +4,7 @@ import gradients from "@styles/gradients";
 export default makeStyles((theme) => ({
   section: {
     position: "relative",
-    paddingTop: theme.spacing(5),
+    paddingTop: theme.spacing(3),
     paddingBottom: theme.spacing(5),
   },
   badges: {
@@ -47,5 +47,12 @@ export default makeStyles((theme) => ({
   },
   background_overlay: {
     zIndex: -1,
+  },
+  container: {
+    padding: 0,
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
   },
 }));

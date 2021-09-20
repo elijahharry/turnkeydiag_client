@@ -149,8 +149,8 @@ export default makeStyles((theme) => ({
     position: "absolute",
     width: "100%",
     height: "100%",
-    backdropFilter:
-      "grayscale(100%) sepia(100%) brightness(70%) hue-rotate(345deg)",
+    backdropFilter: "sepia(100%)",
+    backgroundColor: `${theme.palette.primary.dark}99`,
   },
   overlay_gradient: {
     position: "absolute",

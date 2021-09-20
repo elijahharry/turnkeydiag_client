@@ -36,7 +36,7 @@ export default function About() {
           folder: "main",
         }}
         desc={[
-          "Our company and executives having over a decade of experience in healthcare and diagnostics have partnered with a handful of the nations best labs across the united States to be bale to serve every population’s businesses and consumers.",
+          "Our company and executives having over a decade of experience in healthcare and diagnostics have partnered with a handful of the nations best labs across the united States to be able to serve every population’s businesses and consumers.",
           "From fastest turn around times, to extended panels only found in hospital settings, over the top wrap around care and customer service we are able to partner you with your exact ideal needs for a vendor and long time relationship.",
         ]}
         padding="min-top"
@@ -54,9 +54,9 @@ export default function About() {
           folder: "main",
         }}
         desc={[
-          "What we provide is no-cost, in-house, full service testing. We are able to partner with you and work with your patients insurance, the tests you run, the turn around times you want and the customer service you need and deserve.",
-          "We run fully-independent, boutique national labs to service and partner with you to rely on. We help you deliver seamlessly for your clients in order to help you retain and grow your business.",
-          "While traditional labs have to send a portion of their diagnostic testing out of house across the street to a local hospital, it adds another 12-24 hours to the turnaround time. At Turnkey Diagnostics, we perform all of our testing in-house, which allows our turnaround times to be faster than other labs.",
+          "What we provide is partnerships for no-cost, in-house, full service testing. We are able to partner with you and work with your patients insurance, the tests you run, the turn around times you want and the customer service you need and deserve.",
+          "Our partners run fully-independent, boutique national labs to service and partner with you to rely on. We help you deliver seamlessly for your clients in order to help you retain and grow your business.",
+          "While traditional labs have to send a portion of their diagnostic testing out of house across the street to a local hospital, it adds another 12-24 hours to the turnaround time. At Turnkey Diagnostics, our partnerships allow all testing to be done in-house, which allows our turnaround times to be faster than other labs.",
         ]}
         flipped={true}
         cta={{ text: "Switch to a single provider", link: "/contact" }}

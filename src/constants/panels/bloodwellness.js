@@ -60,7 +60,7 @@ export const bloodwellness = {
       },
       flipped: true,
       cta: { text: "Improve your clinical testing" },
-      backdrop: { backdrop: "secondary_light", opacity: 0.03 },
+      backdrop: { backdrop: "grey", opacity: 0.04 },
     },
     {
       type: "TextImg",

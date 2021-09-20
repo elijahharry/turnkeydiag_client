@@ -14,18 +14,18 @@ import woundpathogen from "./panels/woundpathogen";
 
 const panels = [
   covid19,
-  rpp,
-  pgx,
-  toxicology,
   bloodwellness,
   uti,
+  rpp,
+  woundpathogen,
+  toxicology,
+  pgx,
+  cardiac,
+  cancer,
+  parkinsonsalzheimersdementia,
   nailfungus,
   autoimmune,
   allergy,
-  cardiac,
-  woundpathogen,
-  cancer,
-  parkinsonsalzheimersdementia,
 ];
 
 export default panels;

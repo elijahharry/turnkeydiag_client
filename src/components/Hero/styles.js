@@ -4,6 +4,7 @@ export default makeStyles((theme) => ({
   section: {
     width: "100%",
     position: "relative",
+    minHeight: 750,
     [theme.breakpoints.down("xs")]: {
       height: "auto !important",
     },
