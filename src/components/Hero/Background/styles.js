@@ -86,6 +86,7 @@ export default makeStyles((theme) => ({
     // backgroundColor: "#000",
     zIndex: 2,
     transition: "backdrop-filter 800ms",
+    transform: "scale(1.1)",
     backdropFilter: "blur(0) contrast(150%) grayscale(100%) brightness(80%)",
   },
   overlay_blur: {

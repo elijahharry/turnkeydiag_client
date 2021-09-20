@@ -14,13 +14,13 @@ const BackgroundVid = ({ vid }) => {
     <div className={classes.video} key={`${vid.src}-hero`}>
       <ReactPlayer
         url={`${process.env.VIDEOS}${vid.src}`}
-        playsinline
-        playing
-        loop
-        muted
+        playsinline={true}
+        playing={true}
+        loop={true}
+        muted={true}
         width="100%"
         height="100%"
-        onStart={() => setLoaded(true)}
+        onReady={() => setLoaded(true)}
         className={`${
           vid?.fit === "right" ? classes.fit_right : classes.fit_center
         }`}

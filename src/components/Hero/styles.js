@@ -5,6 +5,7 @@ export default makeStyles((theme) => ({
     width: "100%",
     position: "relative",
     minHeight: 750,
+    overflow: "hidden",
     [theme.breakpoints.down("xs")]: {
       height: "auto !important",
     },
