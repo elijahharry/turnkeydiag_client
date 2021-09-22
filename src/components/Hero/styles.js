@@ -4,7 +4,6 @@ export default makeStyles((theme) => ({
   section: {
     width: "100%",
     position: "relative",
-    minHeight: 750,
     overflow: "hidden",
     display: "flex",
     flexDirection: "column",
@@ -15,7 +14,6 @@ export default makeStyles((theme) => ({
     },
   },
   container: {
-    paddingTop: 50,
     height: "100%",
     display: "flex",
     flexDirection: "column",
@@ -98,6 +96,21 @@ export default makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       marginLeft: 0,
       marginTop: theme.spacing(1),
+    },
+  },
+  breadcrumb_light: {
+    color: theme.palette.primary.light,
+  },
+  breadcrumb: {
+    cursor: "pointer",
+    "&:hover": {
+      textDecoration: "underline",
+      textDecorationThickness: 3,
+    },
+  },
+  overline: {
+    "& a": {
+      color: theme.palette.primary.light + " !important",
     },
   },
 }));

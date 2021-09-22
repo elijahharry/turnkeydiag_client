@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import ReactPlayer from "react-player";
+import ReactPlayer from "react-player/lazy";
 import Image from "next/image";
 
 import { useScreenSize } from "@context/ScreenSize";
@@ -13,17 +13,20 @@ const BackgroundVid = ({ vid }) => {
   return (
     <div className={classes.video} key={`${vid.src}-hero`}>
       <ReactPlayer
-        volume={0}
-        muted
         url={`${process.env.VIDEOS}${vid.src}`}
         playsinline
-        volume={null}
+        volume={0}
         playing
         loop
+        muted={true}
         width="100%"
         height="100%"
         onReady={() => setLoaded(true)}
-        config={{ file: { forceVideo: true } }}
+        config={{
+          file: {
+            attributes: { muted: true, crossOrigin: true },
+          },
+        }}
         className={`${
           vid?.fit === "right" ? classes.fit_right : classes.fit_center
         }`}

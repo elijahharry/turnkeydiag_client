@@ -89,7 +89,7 @@ export default makeStyles((theme) => ({
       height: "1.3rem",
       width: "1.3rem",
       marginRight: theme.spacing(0.8),
-      color: theme.palette.secondary.lighter,
+      color: theme.palette.primary.main,
     },
   },
   blur_overlay: {
