@@ -5,7 +5,6 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 
 const Author = ({ author }) => {
   const classes = useStyles();
-  console.log(author);
   return (
     <section id="author" className={classes.section + " grey"}>
       <Container maxWidth="lg" className={classes.container}>

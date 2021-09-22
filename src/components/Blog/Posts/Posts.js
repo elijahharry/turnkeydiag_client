@@ -4,7 +4,6 @@ import { Container, Grid, makeStyles } from "@material-ui/core";
 
 const Posts = ({ posts }) => {
   const classes = useStyles();
-
   return (
     <section id="blog-posts" className={classes.section}>
       <Container maxWidth="lg" className={classes.container}>
