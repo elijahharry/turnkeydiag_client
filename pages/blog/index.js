@@ -39,5 +39,5 @@ export default BlogPage;
 
 export async function getStaticProps({ params }) {
   const { posts } = await wp.fetchPosts();
-  return { props: { posts: posts }, revalidate: 60 };
+  return { revalidate: 10, props: { posts: posts } };
 }

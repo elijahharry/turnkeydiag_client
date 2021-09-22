@@ -6,7 +6,6 @@ import Author from "@components/Blog/Author/Author";
 import * as wp from "@lib/wpgraphql";
 
 const BlogPost = ({ post }) => {
-  console.log(post);
   return (
     <>
       <Heading title={`${post.title} | Blog`} desc={post.excerpt} />
@@ -38,7 +37,10 @@ export default BlogPost;
 
 export async function getStaticProps({ params }) {
   const post = await wp.fetchPost(params.slug);
-  return { props: { post: post }, revalidate: 60 };
+  if (post === null) {
+    return { notFound: true };
+  }
+  return { revalidate: 10, props: { post: post } };
 }
 
 export async function getStaticPaths() {
