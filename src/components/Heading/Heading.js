@@ -7,7 +7,7 @@ const Heading = ({ title, desc, keywords }) => {
         <title>{title} | TurnKey Diagnostics</title>
       ) : (
         <title>
-          TurnKey Diagnostics | Full-Service Diagnostics with Extended Panels
+          TurnKey Diagnostics | Nationwide Full-Service Diagnostic Testing
         </title>
       )}
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
