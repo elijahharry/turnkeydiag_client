@@ -101,6 +101,7 @@ const TextImg = ({
   return (
     <section
       id={id}
+      key={`textimg-${id}-${Date.now()}-${Math.random()}`}
       className={`${classes.section}${
         section_border ? ` ${classes.section_border}` : ""
       }`}
