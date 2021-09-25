@@ -7,7 +7,7 @@ export const bloodwellness = {
   },
   slug: "blood-wellness",
   turnaround: "24-48 hr",
-  desc: "Diax offers a full suite of services.",
+  desc: "Offering an extended series of blood panels for a unique perspective on your patients' health.",
   keywords: "Blood Panel, Blood Wellness, Diagnostics, Diax",
   vid: {
     src: "bloodwellness.mp4",
