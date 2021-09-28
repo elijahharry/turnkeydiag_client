@@ -50,5 +50,5 @@ export async function getStaticPaths() {
       slug: slug,
     },
   }));
-  return { paths, fallback: false };
+  return { paths, fallback: "blocking" };
 }
