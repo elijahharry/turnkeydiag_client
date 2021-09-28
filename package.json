@@ -15,8 +15,10 @@
     "react-calendly": "^2.2.1",
     "react-dom": "^17.0.2",
     "react-easy-swipe": "^0.0.22",
+    "react-helmet": "^6.1.0",
     "react-multi-carousel": "^2.6.5",
     "react-player": "^2.9.0",
+    "react-swipeable-views": "^0.14.0",
     "react-timeout": "^2.0.1",
     "react-useinterval": "^1.0.2",
     "sharp": "^0.29.1"

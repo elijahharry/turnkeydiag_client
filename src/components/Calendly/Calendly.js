@@ -40,7 +40,7 @@ const pageSettings = {
   hideEventTypeDetails: false,
   hideGdprBanner: true,
   hideLandingPageDetails: false,
-  primaryColor: "#c5ae99",
+  primaryColor: "#caa45d",
   textColor: "#1B3752",
 };
 

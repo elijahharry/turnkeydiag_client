@@ -142,6 +142,33 @@ const useStyles = makeStyles((theme) =>
         height: "inherit",
         width: "inherit",
       },
+      ".container": {
+        width: "100%",
+        display: "block",
+        boxSizing: "border-box",
+        marginLeft: "auto",
+        marginRight: "auto",
+        paddingLeft: 16,
+        paddingRight: 16,
+        [theme.breakpoints.up("xs")]: {
+          maxWidth: "100vw",
+        },
+        [theme.breakpoints.up("lg")]: {
+          maxWidth: "87.5vw",
+        },
+        [theme.breakpoints.up("xl")]: {
+          maxWidth: 1678,
+        },
+      },
+      ".text_primary": {
+        color: theme.palette.primary.main,
+      },
+      ".text_secondary": {
+        color: theme.palette.secondary.lighter,
+      },
+      ".MuiButton-containedPrimary": {
+        color: "#fff !important",
+      },
     },
   })
 );
