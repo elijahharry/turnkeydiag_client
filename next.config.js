@@ -6,6 +6,8 @@ module.exports = {
     WORDPRESS_DOMAIN: process.env.WORDPRESS_D,
     C47_ID: process.env.CONTACT_FORM_ID,
     FORMSPREE: process.env.FORM_SPREE,
+    ANALYTICS: process.env.GOOGLE_ANALYTICS,
+    CONVERSION: process.env.CONVERSION_ID,
   },
   images: {
     domains: ["res.cloudinary.com", process.env.WORDPRESS_D],

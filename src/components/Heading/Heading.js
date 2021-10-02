@@ -56,6 +56,18 @@ const Heading = ({ title, desc, keywords }) => {
         href="https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet"
       />
+      <script
+        async
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.ANALYTICS}`}
+      />
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${process.env.ANALYTICS}');`,
+        }}
+      />
     </Head>
   );
 };

@@ -1,6 +1,5 @@
 import { InlineWidget, PopupWidget, openPopupWidget } from "react-calendly";
 import Image from "next/image";
-import { Helmet } from "react-helmet";
 
 import InsertInvitationIcon from "@material-ui/icons/InsertInvitation";
 import { Button } from "@material-ui/core";
@@ -49,9 +48,6 @@ const Calendly = ({ prefill, justButton }) => {
 
   return (
     <>
-      <Helmet>
-        <script>{`{"gtag('event', 'conversion', {'send_to': '${process.env.GOOGLE_CONVERSION}', 'event_callback': callback});"}`}</script>
-      </Helmet>
       {justButton ? (
         <>
           <Button
